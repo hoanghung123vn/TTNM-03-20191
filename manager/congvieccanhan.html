@@ -7,15 +7,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description"
         content="Responsive sidebar template with sliding effect and dropdown menu based on bootstrap 3">
-    <title>Trang chủ</title>
+    <title>Công việc cá nhân</title>
 
     <!-- using online links -->
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
         integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
         integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <link rel="stylesheet" href="//malihu.github.io/custom-scrollbar/jquery.mCustomScrollbar.min.css">
-
     <!-- using local links -->
     <!-- <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="../node_modules/@fortawesome/fontawesome-free/css/all.min.css">
@@ -23,6 +23,7 @@
 
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/sidebar-themes.css">
+
     <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
 </head>
 
@@ -32,7 +33,7 @@
             <div class="sidebar-content">
                 <!-- sidebar-brand  -->
                 <div class="sidebar-item sidebar-brand">
-                    <a href="#"> <i class="fa fa-home"></i> Trang chủ</a>
+                    <a href="index.html"> <i class="fa fa-home"></i> Trang chủ</a>
                 </div>
 
                 <!-- sidebar-header  -->
@@ -81,7 +82,7 @@
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="viecnhom.html">Công việc nhóm
+                                        <a href="#">Công việc nhóm
                                             <span class="badge badge-pill badge-success">15</span>
                                         </a>
 
@@ -284,40 +285,127 @@
 
             <div class="container-fluid">
                 <div class="row">
-                    <div class="form-group col-md-12">
-                        <h3>Xin chào Hoàng!</h3>
-                        <p>Chúc bạn một ngày làm việc hiệu quả</p>
-                    </div>
-                </div>
-                <hr>
-                <div class="row">
-                    <div class="form-group col-md-12">
-                        <h4>Công việc bạn sẽ làm hôm nay:</h4>
-                        <textarea class="form-control" rows="4" id="comment"></textarea>
-                    </div>
+
+                    <h4 class="container-fluid">Công việc của bạn</h4>
+
                 </div>
 
                 <div class="row">
                     <div class="form-group col-md-12">
-                        <p>Công việc vừa xem:</p>
-                        <ul class="nav flex-column">
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Lên menu cơm trưa tháng 12</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Chuẩn bị quà tặng cho nhân viên xuất sắc tháng 11</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Tổ chức sinh nhật công ty </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Họp tổng kết tháng 11</a>
-                            </li>
-                        </ul>
+
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Id</th>
+                                    <th>Subject</th>
+                                    <th>Status</th>
+                                    <th>Priority</th>
+                                    <th>Deadline</th>
+                                    <th>Updated</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><a href="#" id="00001">00001</a></td>
+                                    <td>Họp các tổ trưởng</td>
+                                    <td><span class="badge badge-pill badge-primary">Mới</span></td>
+                                    <td><span class="badge badge-pill badge-warning">Trung bình</span></td>
+                                    <td>2019-13-11 14:00</td>
+                                    <td>2019-13-11 09:00</td>
+                                </tr>
+                            </tbody>
+
+                            <tbody>
+                                <tr>
+                                    <td><a href="">00002</a></td>
+                                    <td>Họp với phòng nhân sự</td>
+                                    <td><span class="badge badge-pill badge-primary">Mới</span></td>
+                                    <td><span class="badge badge-pill badge-danger">Cao</span></td>
+                                    <td>2019-13-11 10:00</td>
+                                    <td>2019-13-11 08:00</td>
+                                </tr>
+                            </tbody>
+
+                            <tbody>
+                                <tr>
+                                    <td><a href="">00003</a></td>
+                                    <td>Kiểm tra chất lượng nhà vệ sinh</td>
+                                    <td><span class="badge badge-pill badge-success">Hoàn thành</span></td>
+                                    <td><span class="badge badge-pill badge-success">Thấp</span></td>
+                                    <td>2019-13-11 08:00</td>
+                                    <td>2019-13-11 08:00</td>
+                                </tr>
+                            </tbody>
+
+                            <tbody>
+                                <tr>
+                                    <td><a href="">00004</a></td>
+                                    <td>Lên kế hoạch tổ chức sinh nhật công ty</td>
+                                    <td><span class="badge badge-pill badge-warning">Đang làm</span></td>
+                                    <td><span class="badge badge-pill badge-success">Thấp</span></td>
+                                    <td>2019-20-11 10:00</td>
+                                    <td>2019-13-11 08:00</td>
+                                </tr>
+                            </tbody>
+
+                            <tbody>
+                                <tr>
+                                    <td><a href="">00005</a></td>
+                                    <td>Họp tổ bảo vệ</td>
+                                    <td><span class="badge badge-pill badge-success">Hoàn thành</span></td>
+                                    <td><span class="badge badge-pill badge-warning">Trung bình</span></td>
+                                    <td>2019-12-11 14:00</td>
+                                    <td>2019-12-11 14:00</td>
+
+                                </tr>
+
+                            </tbody>
+
+                            <tbody>
+                                <tr>
+                                    <td><a href="">00006</a></td>
+                                    <td>Phê duyệt kế hoạch thay đổi menu cơm trưa</td>
+                                    <td><span class="badge badge-pill badge-warning">Đang làm</span></td>
+                                    <td><span class="badge badge-pill badge-danger">Cao</span></td>
+                                    <td>2019-15-11 10:00</td>
+                                    <td>2019-13-11 08:00</td>
+                                </tr>
+                            </tbody>
+
+                            <tbody>
+                                <tr>
+                                    <td><a href="">00007</a></td>
+                                    <td>Training nhân viên mới</td>
+                                    <td><span class="badge badge-pill badge-primary">Mới</span></td>
+                                    <td><span class="badge badge-pill badge-warning">Trung bình</span></td>
+                                    <td>2019-01-12 14:00</td>
+                                    <td>2019-13-11 08:00</td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
 
-
+                    <div class="row container-fluid">
+                        <div class="col-md-10">
+                            <span>
+                                <ul class="pagination">
+                                    <li class="page-item disabled"><a class="page-link" href="#">Previous</a></li>
+                                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                                </ul>
+                            </span>
+                        </div>
+                        <div class="col-md-2">
+                            <button type="button" class="btn btn-outline-success"
+                                onclick="document.location.href='taomoicongviec.html';">
+                                Tạo công việc mới</button>
+                        </div>
+                    </div>
                 </div>
+
+
                 <br>
                 <br>
                 <br>
@@ -375,6 +463,7 @@
 
 
     <script src="js/main.js"></script>
+
 </body>
 
 </html>
