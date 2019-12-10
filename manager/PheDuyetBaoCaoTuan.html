@@ -7,19 +7,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description"
         content="Responsive sidebar template with sliding effect and dropdown menu based on bootstrap 3">
-    <title>Quản lý báo cáo</title>
+    <title>Chat Application</title>
 
     <!-- using online links -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
-        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
-        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
     <!-- <link rel="stylesheet" href="//malihu.github.io/custom-scrollbar/jquery.mCustomScrollbar.min.css"> -->
+
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/sidebar-themes.css">
     <!-- Favicon -->
     <link rel="apple-touch-icon" href="assets/images/logo/apple-touch-icon.html">
     <link rel="shortcut icon" href="assets/images/logo/favicon.png">
+
+    <!-- core dependcies css -->
+    <link rel="stylesheet" href="assets/vendor/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="assets/vendor/PACE/themes/blue/pace-theme-minimal.css" />
+    <link rel="stylesheet" href="assets/vendor/perfect-scrollbar/css/perfect-scrollbar.min.css" />
+
+    <!-- page css -->
+
+    <!-- core css -->
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet">
+    <link href="assets/css/themify-icons.css" rel="stylesheet">
+    <link href="assets/css/materialdesignicons.min.css" rel="stylesheet">
+    <link href="assets/css/animate.min.css" rel="stylesheet">
+    <link href="assets/css/app.css" rel="stylesheet">
 </head>
 
 <body>
@@ -28,18 +41,19 @@
             <div class="sidebar-content">
                 <!-- sidebar-brand  -->
                 <div class="sidebar-item sidebar-brand">
-                    <a href="index.html">Bộ phận Hậu cần - Hỗ trợ</a>
+                    <a href="index.html"> <i class="fa fa-home"></i> Trang chủ</a>
                 </div>
+
                 <!-- sidebar-header  -->
                 <div class="sidebar-item sidebar-header d-flex flex-nowrap">
                     <div class="user-pic">
                         <img class="img-responsive img-rounded" src="img/user.jpg" alt="User picture">
                     </div>
                     <div class="user-info">
-                        <span class="user-name">Trưởng bộ phận
-
+                        <span class="user-name">Hoang
+                            <strong>Pham</strong>
                         </span>
-                        <!-- <span class="user-role">Administrator</span> -->
+                        <span class="user-role">Tổ trưởng</span>
                         <span class="user-status">
                             <i class="fa fa-circle"></i>
                             <span>Online</span>
@@ -50,7 +64,7 @@
                 <div class="sidebar-item sidebar-search">
                     <div>
                         <div class="input-group">
-                            <input type="text" class="form-control search-menu" placeholder="Tìm kiếm...">
+                            <input type="text" class="form-control search-menu" placeholder="Search...">
                             <div class="input-group-append">
                                 <span class="input-group-text">
                                     <i class="fa fa-search" aria-hidden="true"></i>
@@ -79,15 +93,11 @@
                                         <a href="viecnhom.html">Công việc nhóm
                                             <span class="badge badge-pill badge-success">15</span>
                                         </a>
-
                                     </li>
                                     <li>
                                         <a href="workingreport.html">Báo cáo công việc trong ngày
                                             <span class="badge badge-pill badge-success">15</span>
                                         </a>
-                                    </li>
-                                    <li>
-                                        <a href="thongke.html">Thống kê</a>
                                     </li>
                                 </ul>
                             </div>
@@ -101,9 +111,7 @@
                             <div class="sidebar-submenu">
                                 <ul>
                                     <li>
-                                        <a href="#">Danh sách nhân viên
-
-                                        </a>
+                                        <a href="#">Danh sách nhân viên</a>
                                     </li>
                                     <li>
                                         <a href="#">Theo dõi tiến độ công việc trong ngày</a>
@@ -127,7 +135,7 @@
                                     <li>
                                         <a href="create-report.html">Gửi báo cáo</a>
                                     </li>
-                                   
+
                                     <li>
                                         <a href="PheDuyetBaoCaoTuan.html">Phê duyệt cáo tuần</a>
                                     </li>
@@ -148,10 +156,7 @@
                                         <a href="chat.html">Chat</a>
                                     </li>
                                     <li>
-                                        <a href="email.html">Email</a>
-                                    </li>
-                                    <li>
-                                        <a href="contact.html">Liên hệ</a>
+                                        <a href="#">Email</a>
                                     </li>
                                 </ul>
                             </div>
@@ -170,8 +175,7 @@
                     </a>
                     <div class="dropdown-menu notifications" aria-labelledby="dropdownMenuMessage">
                         <div class="notifications-header">
-                            <i class="fa fa-bell"></i>
-                            Notifications
+                            <i class="fa fa-bell"></i> Notifications
                         </div>
                         <div class="dropdown-divider"></div>
                         <a class="dropdown-item" href="#">
@@ -180,8 +184,7 @@
                                     <i class="fas fa-check text-success border border-success"></i>
                                 </div>
                                 <div class="content">
-                                    <div class="notification-detail">Lorem ipsum dolor sit amet consectetur adipisicing
-                                        elit. In totam explicabo</div>
+                                    <div class="notification-detail">Đã hoàn thành cuộc họp với tổ 3</div>
                                     <div class="notification-time">
                                         6 minutes ago
                                     </div>
@@ -194,10 +197,9 @@
                                     <i class="fas fa-exclamation text-info border border-info"></i>
                                 </div>
                                 <div class="content">
-                                    <div class="notification-detail">Lorem ipsum dolor sit amet consectetur adipisicing
-                                        elit. In totam explicabo</div>
+                                    <div class="notification-detail">TuyenTK vừa nộp báo cáo công việc trong ngày</div>
                                     <div class="notification-time">
-                                        Today
+                                        7 minutes ago
                                     </div>
                                 </div>
                             </div>
@@ -208,10 +210,10 @@
                                     <i class="fas fa-exclamation-triangle text-warning border border-warning"></i>
                                 </div>
                                 <div class="content">
-                                    <div class="notification-detail">Lorem ipsum dolor sit amet consectetur adipisicing
-                                        elit. In totam explicabo</div>
+                                    <div class="notification-detail">Còn 1 ngày đến hạn hoàn thành công việc Thay mới
+                                        máy in</div>
                                     <div class="notification-time">
-                                        Yesterday
+                                        7 minutes ago
                                     </div>
                                 </div>
                             </div>
@@ -227,8 +229,7 @@
                     </a>
                     <div class="dropdown-menu messages" aria-labelledby="dropdownMenuMessage">
                         <div class="messages-header">
-                            <i class="fa fa-envelope"></i>
-                            Messages
+                            <i class="fa fa-envelope"></i> Messages
                         </div>
                         <div class="dropdown-divider"></div>
                         <a class="dropdown-item" href="#">
@@ -238,10 +239,9 @@
                                 </div>
                                 <div class="content">
                                     <div class="message-title">
-                                        <strong> Jhon doe</strong>
+                                        <strong>HungNV</strong>
                                     </div>
-                                    <div class="message-detail">Lorem ipsum dolor sit amet consectetur adipisicing
-                                        elit. In totam explicabo</div>
+                                    <div class="message-detail">Máy in của phòng kế toán đang bị hỏng ....</div>
                                 </div>
                             </div>
 
@@ -253,10 +253,9 @@
                                 </div>
                                 <div class="content">
                                     <div class="message-title">
-                                        <strong> Jhon doe</strong>
+                                        <strong>TuyenTK</strong>
                                     </div>
-                                    <div class="message-detail">Lorem ipsum dolor sit amet consectetur adipisicing
-                                        elit. In totam explicabo</div>
+                                    <div class="message-detail">Chiều nay họp lúc mấy giờ nhỉ?</div>
                                 </div>
                             </div>
 
@@ -268,10 +267,9 @@
                                 </div>
                                 <div class="content">
                                     <div class="message-title">
-                                        <strong> Jhon doe</strong>
+                                        <strong>TienNH</strong>
                                     </div>
-                                    <div class="message-detail">Lorem ipsum dolor sit amet consectetur adipisicing
-                                        elit. In totam explicabo</div>
+                                    <div class="message-detail">Mọi người đang cố gắng để hoàn thành đúng deadline</div>
                                 </div>
                             </div>
                         </a>
@@ -304,103 +302,119 @@
             </div>
         </nav>
         <!-- page-content  -->
-        <main class="page-content pt-2">
-            <nav class="navbar navbar-light bg-light px-5">
-                <a class="navbar-brand" href="#">
-                    <img src="https://image.flaticon.com/icons/svg/235/235253.svg" width="30" height="30"
-                        class="d-inline-block align-top" alt="">
-                    Tổng hợp báo cáo
-                </a>
-            </nav>
+        <main class="page-content">
+                <div class="main-content">
+                        <div class="container-fluid">
+                            <div class="page-header">
+                                <h2 class="header-title">Phê duyệt báo cáo</h2>
+                                <div class="header-sub-title">
+                                    <nav class="breadcrumb breadcrumb-dash">
+                                        <a href="#" class="breadcrumb-item active">Báo cáo ngày</a>
+                                        <a class="breadcrumb-item" href="#">Báo cáo tuần</a>
+                                        <a class="breadcrumb-item" href="#">Báo cáo tháng</a>
+                                        
+                                    </nav>
+                                </div>
+                            </div>  
+
+            <div class="card">
+               
+                <div class="card-body">
+                    <div class="table-overflow">
+                        <table class="table table-xl border">
+                            <thead class="thead-light">
+                                <tr>
+                                    <th class="text-center" scope="col">STT</th>
+                                    <th scope="col">Người gửi</th>
+                                    <th scope="col">Bộ phận</th>
+                                    <th scope="col">Ngày</th>
+                                    <th scope="col">Tiêu đề</th>
+                                    <th class="text-center" scope="col">Report</th>
+                                    <th class="text-center" scope="col">Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <div class="list-media">
+                                            <div class="list-item">
+
+                                                <div class="info">
+                                                    <span class="title">1</span>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>Cao Thị Huyền</td>
+                                    <td>Hậu cần</td>
+                                    <td>12/12/2019</td>
+                                    <td>Báo cáo cá nhân tuần 1</td>
+                                    <td class="text-center"><a href="#" class="text-gray font-size-22"><i
+                                                class="mdi mdi-file-outline"></i></a></td>
+                                    <td>
+                                        <div><a><button class="btn btn-success btn-rounded">Phê duyệt</button></a>
+                                            <a><button data-toggle="modal" data-target="#modal-sm" class="btn btn-danger btn-rounded swal-with-text">
+                                                    Xóa</button></a>
+                                            <a><button class="btn btn-gradient-warning btn-rounded">Phản
+                                                    hồi</button></a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="list-media">
+                                            <div class="list-item">
+
+                                                <div class="info">
+                                                    <span class="title">2</span>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>Cao Thị Nhi</td>
+                                    <td>Hậu cần</td>
+                                    <td>11/12/2019</td>
+                                    <td>Báo cáo cá nhân tuần 1</td>
+                                    <td class="text-center"><a href="bao-cao-ngay1.html"
+                                            class="text-gray font-size-22"><i class="mdi mdi-file-outline"></i></a></td>
+                                    <td>
+                                        <div><a><button class="btn btn-success btn-rounded">Phê duyệt</button></a>
+                                            <a><button data-toggle="modal" data-target="#modal-sm"
+                                                    class="btn btn-danger btn-rounded swal-with-text">Xóa</button></a>
+                                            <a><button class="btn btn-gradient-warning btn-rounded">Phản
+                                                    hồi</button></a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                
 
 
-            <table class="table table-bordered">
-                <thead class="thead-light">
-                    <tr>
-                        <th scope="col">Thứ tự</th>
-                        <th scope="col">Tên báo cáo</th>
-                        <th scope="col">Ngày tạo </th>
-                        <th scope="col">Hành động</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <th scope="row">6</th>
-                        <td>Báo cáo tổ hậu cần tháng 6</td>
-                        <td>20/6/19, 10:00 AM</td>
-                        <td>
-                            <!-- <button type="button" class="btn btn-info">Chi tiết</button> -->
-                            <a href="chiTietBaoCao.html"><button type="button" class="btn btn-info">Chi
-                                    tiết</button></a>
 
-                            <button type="button" class="btn btn-danger" onclick="myfuntion()">Xóa</button>
 
-                            <!-- <p id="demo">Bạn có chắc chắn muốn xóa báo cáo tháng này không ??</p>
-                            <script>
-                                function myFunction() {
-                                  alert(document.getElementById("demo").innerHTML);
-                                }
-                                </script> -->
-                                <button type="button" class="btn btn-primary">Tải về</button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th scope="row">7</th>
-                        <td>Báo cáo tổ vệ sinh tháng 7</td>
-                        <td>22/07/19, 10:00 PM</td>
-                        <td>
-                            <button type="button" class="btn btn-info">Chi tiết</button>
-                            <button data-toggle="modal" data-target="#modal-sm" type="button" class="btn btn-danger">Xóa</button>
-                            <button type="button" class="btn btn-primary">Tải về</button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th scope="row">8</th>
-                        <td>Báo cáo tổ giao hàng tháng 7</td>
-                        <td>12/07/19, 10:12 AM</td>
-                        <td>
-                            <button type="button" class="btn btn-info">Chi tiết</button>
-                            <button data-toggle="modal" data-target="#modal-sm" type="button" class="btn btn-danger">Xóa</button>
-                            <button type="button" class="btn btn-primary">Tải về</button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th scope="row">9</th>
-                        <td>Báo cáo tổ giao hàng tháng 8 </td>
-                        <td>12/08/19, 10:00 AM</td>
-                        <td>
-                            <button type="button" class="btn btn-info">Chi tiết</button>
-                            <button data-toggle="modal" data-target="#modal-sm" type="button" class="btn btn-danger">Xóa</button>
-                            <button type="button" class="btn btn-primary">Tải về</button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th scope="row">10</th>
-                        <td>Báo cáo tổ hỗ trợ tháng 10</td>
-                        <td>20/10/19, 10:00 AM</td>
-                        <td>
-                            <button type="button" class="btn btn-info">Chi tiết</button>
-                            <button data-toggle="modal" data-target="#modal-sm" type="button" class="btn btn-danger">Xóa</button>
-                            <button type="button" class="btn btn-primary">Tải về</button>
-                        </td>
-                    </tr>
-            </table>
-            <nav aria-label="...">
-                <ul class="pagination">
-                    <li class="page-item">
-                        <a class="page-link" href="#" tabindex="-1" aria-disabled="false">Trang trước</a>
-                    </li>
-                    <li class="page-item"><a class="page-link" href="#">1</a></li>
-                    <li class="page-item active" aria-current="page">
-                        <a class="page-link" href="#">2 <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="page-item"><a class="page-link" href="#">3</a></li>
-                    <li class="page-item">
-                        <a class="page-link" href="#">Tiếp theo</a>
-                    </li>
-                </ul>
-              
-            </nav>
+
+                            </tbody>
+                        </table>
+                        <nav aria-label="...">
+                            <ul class="pagination">
+                                <li class="page-item">
+                                    <a class="page-link" href="#" tabindex="-1" aria-disabled="false">Trang trước</a>
+                                </li>
+                                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                <li class="page-item active" aria-current="page">
+                                    <a class="page-link" href="#">2 <span class="sr-only">(current)</span></a>
+                                </li>
+                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#">Tiếp theo</a>
+                                </li>
+                            </ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
             <br>
             <br>
             <br>
@@ -433,8 +447,9 @@
                     </div>
                 </div>
             </footer>
-        </main>
-        <!-- page-content" -->
+    </div>
+    </main>
+    <!-- page-content" -->
     </div>
     <!-- page-wrapper -->
     <div class="modal fade" id="modal-sm">
@@ -459,6 +474,13 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
         integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous">
         </script>
+    <script src="assets/js/vendor.js"></script>
+
+    <script src="assets/js/app.min.js"></script>
+
+    <!-- page js -->
+    <script src="assets/js/apps/chat.js"></script>
+    <script src="assets/js/main.js"></script>
     <script src="js/main.js"></script>
 </body>
 
