@@ -7,21 +7,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description"
         content="Responsive sidebar template with sliding effect and dropdown menu based on bootstrap 3">
-    <title>Form</title>
+    <title>HCI 03 - Bản đồ trang web </title>
 
     <!-- using online links -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
-        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
-        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
     <!-- <link rel="stylesheet" href="//malihu.github.io/custom-scrollbar/jquery.mCustomScrollbar.min.css"> -->
 
-    <!-- using local links -->
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/sidebar-themes.css">
     <!-- Favicon -->
     <link rel="apple-touch-icon" href="assets/images/logo/apple-touch-icon.html">
     <link rel="shortcut icon" href="assets/images/logo/favicon.png">
+
+    <!-- core dependcies css -->
+    <link rel="stylesheet" href="assets/vendor/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="assets/vendor/PACE/themes/blue/pace-theme-minimal.css" />
+    <link rel="stylesheet" href="assets/vendor/perfect-scrollbar/css/perfect-scrollbar.min.css" />
+
+    <!-- page css -->
+
+    <!-- core css -->
+    <!-- <link href="assets/css/font-awesome.min.css" rel="stylesheet"> -->
+    <link href="assets/css/themify-icons.css" rel="stylesheet">
+    <link href="assets/css/materialdesignicons.min.css" rel="stylesheet">
+    <link href="assets/css/animate.min.css" rel="stylesheet">
+    <link href="assets/css/app.css" rel="stylesheet">
 </head>
 
 <body>
@@ -30,18 +41,19 @@
             <div class="sidebar-content">
                 <!-- sidebar-brand  -->
                 <div class="sidebar-item sidebar-brand">
-                    <a href="index.html">Bộ phận Hậu cần - Hỗ trợ</a>
+                    <a href="index.html"> <i class="fa fa-home"></i> Trang chủ</a>
                 </div>
+
                 <!-- sidebar-header  -->
                 <div class="sidebar-item sidebar-header d-flex flex-nowrap">
                     <div class="user-pic">
                         <img class="img-responsive img-rounded" src="img/user.jpg" alt="User picture">
                     </div>
                     <div class="user-info">
-                        <span class="user-name">Trưởng bộ phận
-
+                        <span class="user-name">Hoang
+                            <strong>Pham</strong>
                         </span>
-                        <!-- <span class="user-role">Administrator</span> -->
+                        <span class="user-role">Tổ trưởng</span>
                         <span class="user-status">
                             <i class="fa fa-circle"></i>
                             <span>Online</span>
@@ -52,7 +64,7 @@
                 <div class="sidebar-item sidebar-search">
                     <div>
                         <div class="input-group">
-                            <input type="text" class="form-control search-menu" placeholder="Tìm kiếm...">
+                            <input type="text" class="form-control search-menu" placeholder="Search...">
                             <div class="input-group-append">
                                 <span class="input-group-text">
                                     <i class="fa fa-search" aria-hidden="true"></i>
@@ -81,7 +93,6 @@
                                         <a href="viecnhom.html">Công việc nhóm
                                             <span class="badge badge-pill badge-success">15</span>
                                         </a>
-
                                     </li>
                                     <li>
                                         <a href="workingreport.html">Báo cáo công việc trong ngày
@@ -103,9 +114,7 @@
                             <div class="sidebar-submenu">
                                 <ul>
                                     <li>
-                                        <a href="#">Danh sách nhân viên
-
-                                        </a>
+                                        <a href="#">Danh sách nhân viên</a>
                                     </li>
                                     <li>
                                         <a href="#">Theo dõi tiến độ công việc trong ngày</a>
@@ -165,8 +174,7 @@
                     </a>
                     <div class="dropdown-menu notifications" aria-labelledby="dropdownMenuMessage">
                         <div class="notifications-header">
-                            <i class="fa fa-bell"></i>
-                            Thông báo
+                            <i class="fa fa-bell"></i> Notifications
                         </div>
                         <div class="dropdown-divider"></div>
                         <a class="dropdown-item" href="#">
@@ -175,7 +183,7 @@
                                     <i class="fas fa-check text-success border border-success"></i>
                                 </div>
                                 <div class="content">
-                                    <div class="notification-detail"> Em Ngân gửi báo cáo ngày</div>
+                                    <div class="notification-detail">Đã hoàn thành cuộc họp với tổ 3</div>
                                     <div class="notification-time">
                                         6 minutes ago
                                     </div>
@@ -188,9 +196,9 @@
                                     <i class="fas fa-exclamation text-info border border-info"></i>
                                 </div>
                                 <div class="content">
-                                    <div class="notification-detail">Giám đốc thông báo kế hoạch họp</div>
+                                    <div class="notification-detail">TuyenTK vừa nộp báo cáo công việc trong ngày</div>
                                     <div class="notification-time">
-                                        Hôm nay
+                                        7 minutes ago
                                     </div>
                                 </div>
                             </div>
@@ -201,15 +209,16 @@
                                     <i class="fas fa-exclamation-triangle text-warning border border-warning"></i>
                                 </div>
                                 <div class="content">
-                                    <div class="notification-detail">Lịch họp</div>
+                                    <div class="notification-detail">Còn 1 ngày đến hạn hoàn thành công việc Thay mới
+                                        máy in</div>
                                     <div class="notification-time">
-                                        Hôm qua
+                                        7 minutes ago
                                     </div>
                                 </div>
                             </div>
                         </a>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item text-center" href="#">Xem tất cả thông báo</a>
+                        <a class="dropdown-item text-center" href="#">View all notifications</a>
                     </div>
                 </div>
                 <div class="dropdown">
@@ -219,8 +228,7 @@
                     </a>
                     <div class="dropdown-menu messages" aria-labelledby="dropdownMenuMessage">
                         <div class="messages-header">
-                            <i class="fa fa-envelope"></i>
-                            Tin nhắn
+                            <i class="fa fa-envelope"></i> Messages
                         </div>
                         <div class="dropdown-divider"></div>
                         <a class="dropdown-item" href="#">
@@ -230,9 +238,9 @@
                                 </div>
                                 <div class="content">
                                     <div class="message-title">
-                                        <strong> Jhon doe</strong>
+                                        <strong>HungNV</strong>
                                     </div>
-                                    <div class="message-detail">Tin nhắn</div>
+                                    <div class="message-detail">Máy in của phòng kế toán đang bị hỏng ....</div>
                                 </div>
                             </div>
 
@@ -244,10 +252,9 @@
                                 </div>
                                 <div class="content">
                                     <div class="message-title">
-                                        <strong> Jhon doe</strong>
+                                        <strong>TuyenTK</strong>
                                     </div>
-                                    <div class="message-detail">Lorem ipsum dolor sit amet consectetur adipisicing
-                                        elit. In totam explicabo</div>
+                                    <div class="message-detail">Chiều nay họp lúc mấy giờ nhỉ?</div>
                                 </div>
                             </div>
 
@@ -259,10 +266,9 @@
                                 </div>
                                 <div class="content">
                                     <div class="message-title">
-                                        <strong> Jhon doe</strong>
+                                        <strong>TienNH</strong>
                                     </div>
-                                    <div class="message-detail">Lorem ipsum dolor sit amet consectetur adipisicing
-                                        elit. In totam explicabo</div>
+                                    <div class="message-detail">Mọi người đang cố gắng để hoàn thành đúng deadline</div>
                                 </div>
                             </div>
                         </a>
@@ -294,89 +300,118 @@
                 </div>
             </div>
         </nav>
-        <!-- page-content  -->
-        <main class="page-content pt-2">
-            <nav class="navbar navbar-light bg-light px-5">
-                <a class="navbar-brand" href="#">
-                    <img src="https://image.flaticon.com/icons/svg/235/235253.svg" width="30" height="30"
-                        class="d-inline-block align-top" alt="">
-                    Tổng hợp báo cáo
-                </a>
-            </nav>
-            <table class="table table-bordered">
-                <thead class="thead-light">
-                    <tr>
-                        <th scope="col">Thứ tự</th>
-                        <th scope="col">Tên biểu mẫu</th>
-                        <th scope="col">Ngày tạo </th>
-                        <th scope="col">Hành động</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <th scope="row">1</th>
-                        <td>Biểu mẫu báo cáo tổng hợp theo tháng</td>
-                        <td>20/6/19, 10:00 AM</td>
-                        <td>
-                            <button type="button" class="btn btn-info">Tải về</button>
-
-                        </td>
-                    </tr>
-                    <tr>
-                        <th scope="row">2</th>
-                        <td>Biểu mẫu báo cáo tổ vệ sinh</td>
-                        <td>22/07/19, 10:00 PM</td>
-                        <td>
-                            <button type="button" class="btn btn-info">Tải về</button>
-
-                        </td>
-                    </tr>
-                    <tr>
-                        <th scope="row">3</th>
-                        <td>Biểu mấu báo cáo tổ giao hàng</td>
-                        <td>12/07/19, 10:12 AM</td>
-                        <td>
-                            <button type="button" class="btn btn-info">Tải về</button>
-
-                        </td>
-                    </tr>
-                    <tr>
-                        <th scope="row">4</th>
-                        <td>Biểu mẫu báo cáo tổ hỗ trợ </td>
-                        <td>12/08/19, 10:00 AM</td>
-                        <td>
-                            <button type="button" class="btn btn-info">Tải về</button>
-
-                        </td>
-                    </tr>
-                    <tr>
-                        <th scope="row">5</th>
-                        <td>Biểu mẫu tổng hợp thông tin theo phòng</td>
-                        <td>20/10/19, 10:00 AM</td>
-                        <td>
-                            <button type="button" class="btn btn-info">Tải về</button>
-                        </td>
-                    </tr>
-            </table>
-            <nav aria-label="...">
-                <ul class="pagination">
-                    <li class="page-item">
-                        <a class="page-link" href="#" tabindex="-1" aria-disabled="false">Trang trước</a>
-                    </li>
-                    <li class="page-item active" aria-current="page"></li>
-                    <li class="page-item"><a class="page-link" href="#">1<span class="sr-only">(current)</span></a></li>
-
-                    <a class="page-link" href="#">2 </a>
-                    </li>
-                    <li class="page-item"><a class="page-link" href="#">3</a></li>
-                    <li class="page-item">
-                        <a class="page-link" href="#">Tiếp theo</a>
-                    </li>
-                </ul>
-            </nav>
-            <br>
-            <br>
-            <br>
+        <!-- page-content START HERE -->
+        <main class="page-content">
+            <div class="container-fluid">
+                <div class="sitemap-page">
+                    <div class="page-title">
+                        <h2>Sitemap</h2>
+                    </div>
+                    <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3">
+                        <ul class="simple-list arrow-list bold-list">
+                            <li> <a href="#">Woman</a>
+                                <ul>
+                                    <li><a href="#">&nbsp;&nbsp;&nbsp;&nbsp;<i
+                                                class="fa fa-angle-double-right">&nbsp;</i>Accessories</a></li>
+                                    <li><a href="#">&nbsp;&nbsp;&nbsp;&nbsp;<i
+                                                class="fa fa-angle-double-right">&nbsp;</i>Cocktail </a>
+                                    </li>
+                                    <li><a href="#">&nbsp;&nbsp;&nbsp;&nbsp;<i
+                                                class="fa fa-angle-double-right">&nbsp;</i>Day </a> </li>
+                                    <li><a href="#">&nbsp;&nbsp;&nbsp;&nbsp;<i
+                                                class="fa fa-angle-double-right">&nbsp;</i>Evening </a>
+                                    </li>
+                                    <li><a href="#">&nbsp;&nbsp;&nbsp;&nbsp;<i
+                                                class="fa fa-angle-double-right">&nbsp;</i>Sundresses
+                                        </a> </li>
+                                    <li><a href="#"><i class="fa fa-angle-double-right">&nbsp;</i>New arrivals</a></li>
+                                    <li><a href="#"><i class="fa fa-angle-double-right">&nbsp;</i>Bestsellers</a></li>
+                                    <li><a href="#"><i class="fa fa-angle-double-right">&nbsp;</i>Footwear Womens</a>
+                                    </li>
+                                    <li><a href="#"><i class="fa fa-angle-double-right">&nbsp;</i>Shorts</a></li>
+                                </ul>
+                            </li>
+                            <li> <a href="#">Man</a>
+                                <ul>
+                                    <li><a href="#">&nbsp;&nbsp;&nbsp;&nbsp;<i
+                                                class="fa fa-angle-double-right">&nbsp;</i>Polo
+                                            Shirts</a></li>
+                                    <li><a href="#">&nbsp;&nbsp;&nbsp;&nbsp;<i
+                                                class="fa fa-angle-double-right">&nbsp;</i>Shirts</a>
+                                    </li>
+                                    <li><a href="#">&nbsp;&nbsp;&nbsp;&nbsp;<i
+                                                class="fa fa-angle-double-right">&nbsp;</i>Big &amp;
+                                            Tall</a></li>
+                                    <li><a href="#">&nbsp;&nbsp;&nbsp;&nbsp;<i
+                                                class="fa fa-angle-double-right">&nbsp;</i>Jeans</a></li>
+                                    <li><a href="#">&nbsp;&nbsp;&nbsp;&nbsp;<i
+                                                class="fa fa-angle-double-right">&nbsp;</i>Sweaters</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Footwear</a></li>
+                            <li><a href="#">Accessories</a></li>
+                            <li><a href="#">Sale</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3">
+                        <ul class="simple-list arrow-list bold-list">
+                            <li><a href="#">Shopping Cart</a></li>
+                            <li> <a href="#">My Account</a>
+                                <ul>
+                                    <li><a href="#">&nbsp;&nbsp;&nbsp;&nbsp;<i
+                                                class="fa fa-angle-double-right">&nbsp;</i>My Account</a>
+                                    </li>
+                                    <li><a href="#">&nbsp;&nbsp;&nbsp;&nbsp;<i
+                                                class="fa fa-angle-double-right">&nbsp;</i>Order
+                                            history</a></li>
+                                    <li><a href="#">&nbsp;&nbsp;&nbsp;&nbsp;<i
+                                                class="fa fa-angle-double-right">&nbsp;</i>Advanced
+                                            search</a></li>
+                                    <li><a href="#">&nbsp;&nbsp;&nbsp;&nbsp;<i
+                                                class="fa fa-angle-double-right">&nbsp;</i>Reviews</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li> <a href="#">Categories</a>
+                                <ul>
+                                    <li><a href="#">&nbsp;&nbsp;&nbsp;&nbsp;<i
+                                                class="fa fa-angle-double-right">&nbsp;</i>Women</a></li>
+                                    <li><a href="#">&nbsp;&nbsp;&nbsp;&nbsp;<i
+                                                class="fa fa-angle-double-right">&nbsp;</i>Men</a></li>
+                                    <li><a href="#">&nbsp;&nbsp;&nbsp;&nbsp;<i
+                                                class="fa fa-angle-double-right">&nbsp;</i>Electronics</a></li>
+                                    <li><a href="#">&nbsp;&nbsp;&nbsp;&nbsp;<i
+                                                class="fa fa-angle-double-right">&nbsp;</i>Clothing</a>
+                                    </li>
+                                    <li><a href="#">&nbsp;&nbsp;&nbsp;&nbsp;<i
+                                                class="fa fa-angle-double-right">&nbsp;</i>Lookbook</a>
+                                    </li>
+                                    <li><a href="#">&nbsp;&nbsp;&nbsp;&nbsp;<i
+                                                class="fa fa-angle-double-right">&nbsp;</i>Accessories</a></li>
+                                </ul>
+                            </li>
+                            <li> <a href="#">Information</a>
+                                <ul>
+                                    <li><a href="#">&nbsp;&nbsp;&nbsp;&nbsp;<i
+                                                class="fa fa-angle-double-right">&nbsp;</i>Terms &amp;
+                                            Condition</a></li>
+                                    <li><a href="#">&nbsp;&nbsp;&nbsp;&nbsp;<i
+                                                class="fa fa-angle-double-right">&nbsp;</i>FAQs</a></li>
+                                    <li><a href="#">&nbsp;&nbsp;&nbsp;&nbsp;<i
+                                                class="fa fa-angle-double-right">&nbsp;</i>Privacy
+                                            Policy</a></li>
+                                    <li><a href="#">&nbsp;&nbsp;&nbsp;&nbsp;<i
+                                                class="fa fa-angle-double-right">&nbsp;</i>Sitemap</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4"> <img class="img-responsive animate scale"
+                            src="images/large-icon-sitemap.png" alt=""> </div>
+                </div>
+            </div>
             <hr>
             <footer>
                 <div class="row ">
@@ -410,7 +445,6 @@
         <!-- page-content" -->
     </div>
     <!-- page-wrapper -->
-
     <!-- using online scripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
@@ -419,7 +453,12 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
         integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous">
         </script>
-    <!-- <script src="//malihu.github.io/custom-scrollbar/jquery.mCustomScrollbar.concat.min.js"></script> -->
+    <script src="assets/js/vendor.js"></script>
+
+    <script src="assets/js/app.min.js"></script>
+
+    <!-- page js -->
+    <script src="assets/js/main.js"></script>
     <script src="js/main.js"></script>
 </body>
 
