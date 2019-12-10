@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description"
         content="Responsive sidebar template with sliding effect and dropdown menu based on bootstrap 3">
-    <title>HCI 03 - Bản đồ trang web </title>
+    <title>HCI - Phê duyệt báo cáo tháng</title>
 
     <!-- using online links -->
     <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"> -->
@@ -28,7 +28,7 @@
     <!-- page css -->
 
     <!-- core css -->
-    <!-- <link href="assets/css/font-awesome.min.css" rel="stylesheet"> -->
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet">
     <link href="assets/css/themify-icons.css" rel="stylesheet">
     <link href="assets/css/materialdesignicons.min.css" rel="stylesheet">
     <link href="assets/css/animate.min.css" rel="stylesheet">
@@ -323,114 +323,264 @@
                 </div>
             </div>
         </nav>
-        <!-- page-content START HERE -->
+        <!-- page-content  -->
         <main class="page-content">
-            <div class="container-fluid">
-                <div class="sitemap-page">
-                    <div class="page-title">
-                        <h2>Sitemap</h2>
-                    </div>
-                    <div class="row">
-                        <div class="col-xs-6 col-sm-3 col-md-6 col-lg-6">
-                            <ul class="simple-list arrow-list bold-list" style="list-style-type: none;">
-                                <li> <a href="#">Giao diện trưởng bộ phận</a>
-                                    <ul style="list-style-type: none;">
-                                        <li><a href="login.html">&nbsp;&nbsp;&nbsp;&nbsp;<i
-                                                    class="fa fa-angle-double-right">&nbsp;</i>Đăng nhập</a></li>
-                                        <li><a href="faq.html">&nbsp;&nbsp;&nbsp;&nbsp;<i
-                                                    class="fa fa-angle-double-right">&nbsp;</i>Hỏi đáp </a>
-                                        </li>
-                                        <li><a href="chat.html">&nbsp;&nbsp;&nbsp;&nbsp;<i
-                                                    class="fa fa-angle-double-right">&nbsp;</i>Chat </a> </li>
-                                        <li><a href="email.html">&nbsp;&nbsp;&nbsp;&nbsp;<i
-                                                    class="fa fa-angle-double-right">&nbsp;</i>email </a>
-                                        </li>
-                                        <li><a href="contact.html">&nbsp;&nbsp;&nbsp;&nbsp;<i
-                                                    class="fa fa-angle-double-right">&nbsp;</i>Liên hệ
-                                            </a> </li>
-                                        <li><a href="chiTietBaoCao.html"><i
-                                                    class="fa fa-angle-double-right">&nbsp;</i>Chi tiết báo cáo</a>
-                                        </li>
-                                        <li><a href="congvieccanhan.html"><i
-                                                    class="fa fa-angle-double-right">&nbsp;</i>Công việc cá nhân</a>
-                                        </li>
-                                </li>
-                                <li><a href="index.html"><i class="fa fa-angle-double-right">&nbsp;</i>Dashboard</a>
-                                </li>
-                                <li><a href="pheDuyetBaoCaoNgay.html"><i class="fa fa-angle-double-right">&nbsp;</i>Phê
-                                        duyệt báo cáo ngày</a></li>
-                                <li><a href="PheDuyetBaoCaoTuan.html"><i class="fa fa-angle-double-right">&nbsp;</i>Phê
-                                        duyệt báo cáo tuần</a></li>
-                                <li><a href="PheDuyetBaoCaoThang.html"><i class="fa fa-angle-double-right">&nbsp;</i>Phê
-                                        duyệt báo cáo tháng</a></li>
-                                <li><a href="report_management.html"><i class="fa fa-angle-double-right">&nbsp;</i>Quản
-                                        lý báo cáo</a></li>
-                                <li><a href="create-report.html"><i class="fa fa-angle-double-right">&nbsp;</i>Tạo báo
-                                        cáo</a></li>
-                                <li><a href="thongke.html"><i class="fa fa-angle-double-right">&nbsp;</i>Thống kê</a>
-                                </li>
-                                <li><a href="viecnhom.html"><i class="fa fa-angle-double-right">&nbsp;</i>Việc nhóm</a>
-                                </li>
-                                <li><a href="workingreport.html"><i class="fa fa-angle-double-right">&nbsp;</i>Báo cáo
-                                        công việc hàng ngày</a></li>
-                                <li><a href="taocongviecmoi.html"><i class="fa fa-angle-double-right">&nbsp;</i>Tạo công
-                                        việc mới</a></li>
-                            </ul>
-                            </li>
-                            <li> <a href="#">Giao diện nhân viên</a>
-                                <ul style="list-style-type: none;">
-                                    <li><a href="Lich.html">&nbsp;&nbsp;&nbsp;&nbsp;<i
-                                                class="fa fa-angle-double-right">&nbsp;</i>Lịch</a></li>
-                                    <li><a href="taomoicongviec.html">&nbsp;&nbsp;&nbsp;&nbsp;<i
-                                                class="fa fa-angle-double-right">&nbsp;</i>Tạo mới công việc</a>
-                                    </li>
-                                    <li><a href="danhsachcongviec.html">&nbsp;&nbsp;&nbsp;&nbsp;<i
-                                                class="fa fa-angle-double-right">&nbsp;</i>Danh sách công việc</a></li>
-                                    <li><a href="taobaocao.html">&nbsp;&nbsp;&nbsp;&nbsp;<i
-                                                class="fa fa-angle-double-right">&nbsp;</i>Tạo báo cáo</a></li>
-                                </ul>
-                            </li>
-                            </ul>
-                        </div>
-                        <div class="col-xs-12 col-sm-4 col-md-6 col-lg-6">
-                            <img class="img-responsive animate scale" src="img/large-icon-sitemap.png" alt="">
+            <div class="main-content">
+                <div class="container-fluid">
+                    <div class="page-header">
+                        <h2 class="header-title">Phê duyệt báo cáo</h2>
+                        <div class="header-sub-title">
+                            <nav class="breadcrumb breadcrumb-dash">
+                                <a href="pheDuyetBaoCaoNgay.html" class="breadcrumb-item active">Báo cáo ngày</a>
+                                <a class="breadcrumb-item" href="PheDuyetBaoCaoTuan.html">Báo cáo tuần</a>
+                                <a class="breadcrumb-item" href="PheDuyetBaoCaoThang.html">Báo cáo tháng</a>
+
+                            </nav>
                         </div>
                     </div>
+
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="table-overflow">
+                                <table class="table table-xl border">
+                                    <table id="dt-opt" class="table table-hover table-xl">
+                                        <thead class="thead-light">
+                                            <tr>
+                                                <th class="text-center" scope="col">STT</th>
+                                                <th scope="col">Người gửi</th>
+                                                <th scope="col">Bộ phận</th>
+                                                <th scope="col">Ngày</th>
+                                                <th scope="col">Tiêu đề</th>
+                                                <th class="text-center" scope="col">Report</th>
+                                                <th class="text-center" scope="col">Action</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <div class="list-media">
+                                                        <div class="list-item">
+
+                                                            <div class="info">
+                                                                <span class="title">1</span>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>Võ Thị Hà Vy</td>
+                                                <td>Hậu cần</td>
+                                                <td>12/12/2019</td>
+                                                <td>Báo cáo cá nhân tháng 1</td>
+                                                <td class="text-center"><a href="reportClean-converted.pdf"
+                                                        class="text-gray font-size-22"><i
+                                                            class="mdi mdi-file-outline"></i></a></td>
+                                                <td>
+                                                    <div><a><button data-toggle="modal" data-target="#modal-fs"
+                                                                class="btn btn-success btn-rounded">Phê
+                                                                duyệt</button></a>
+                                                        <a><button data-toggle="modal" data-target="#modal-sm"
+                                                                class="btn btn-danger btn-rounded alert alert-danger">Xóa</button></a>
+                                                        <a><button data-toggle="modal" data-target="#side-modal-r"
+                                                                class="btn btn-gradient-warning btn-rounded">Phản
+                                                                hồi</button></a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <!-- <tr>
+                                            <td>
+                                                <div class="list-media">
+                                                    <div class="list-item">
+
+                                                        <div class="info">
+                                                            <span class="title">2</span>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td>Hà Xuân Quang</td>
+                                            <td>Hậu cần</td>
+                                            <td>11/12/2019</td>
+                                            <td>Báo cáo tháng 1</td>
+                                            <td class="text-center"><a href="reportClean.html"
+                                                    class="text-gray font-size-22"><i
+                                                        class="mdi mdi-file-outline"></i></a></td>
+                                            <td>
+                                                <div><a><button data-toggle="modal" data-target="#modal-fs" class="btn btn-success btn-rounded">Phê
+                                                            duyệt</button></a>
+                                                    <a><button data-toggle="modal" data-target="#modal-sm"
+                                                            class="btn btn-danger btn-rounded ">Xóa</button></a>
+                                                    <a><button data-toggle="modal" data-target="#side-modal-r" class="btn btn-gradient-warning btn-rounded">Phản
+                                                            hồi</button></a>
+                                                </div>
+                                            </td>
+                                        </tr> -->
+
+
+
+                                        </tbody>
+                                    </table>
+
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+                    <br>
+                    <hr>
+                    <footer>
+                        <div class="row ">
+                            <div class="col-md-4">
+                                <small>Made by <span class="text-secondary font-weight-bold">HCI-03</span></small>
+                            </div>
+                            <div class="col-md-4">
+                                <address>
+                                    <strong>HUST, University.</strong><br>
+                                    1 Đại Cồ Việt, Hai Bà Trưng <br>
+                                    Hà Nội, Việt Nam<br>
+                                </address>
+                            </div>
+                            <div class="col-md-4">
+                                <a href="#" target="_blank"
+                                    class="btn btn-sm bg-secondary shadow-sm rounded-0 text-light mr-3 mb-3">
+                                    <i class="fab fa-github" aria-hidden="true"></i>
+                                </a>
+                                <a href="#" target="_blank"
+                                    class="btn btn-sm bg-secondary shadow-sm rounded-0 text-light mr-3 mb-3">
+                                    <i class="fab fa-facebook" aria-hidden="true"></i>
+                                </a>
+                                <a href="#" target="_blank"
+                                    class="btn btn-sm bg-secondary shadow-sm rounded-0 text-light mr-3 mb-3">
+                                    <i class="fab fa-instagram" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </footer>
                 </div>
-            </div>
-            <hr>
-            <footer>
-                <div class="row ">
-                    <div class="col-md-4">
-                        <small>Made by <span class="text-secondary font-weight-bold">HCI-03</span></small>
-                    </div>
-                    <div class="col-md-4">
-                        <address>
-                            <strong>HUST, University.</strong><br>
-                            1 Đại Cồ Việt, Hai Bà Trưng <br>
-                            Hà Nội, Việt Nam<br>
-                        </address>
-                    </div>
-                    <div class="col-md-4">
-                        <a href="#" target="_blank"
-                            class="btn btn-sm bg-secondary shadow-sm rounded-0 text-light mr-3 mb-3">
-                            <i class="fab fa-github" aria-hidden="true"></i>
-                        </a>
-                        <a href="#" target="_blank"
-                            class="btn btn-sm bg-secondary shadow-sm rounded-0 text-light mr-3 mb-3">
-                            <i class="fab fa-facebook" aria-hidden="true"></i>
-                        </a>
-                        <a href="#" target="_blank"
-                            class="btn btn-sm bg-secondary shadow-sm rounded-0 text-light mr-3 mb-3">
-                            <i class="fab fa-instagram" aria-hidden="true"></i>
-                        </a>
-                    </div>
-                </div>
-            </footer>
         </main>
         <!-- page-content" -->
     </div>
+    <div class="modal fade" id="modal-sm">
+        <div class="modal-dialog modal-sm" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <h4 class="m-b-15">Bạn có chắc chắn xóa không</h4>
+                    <p>Xóa cái này sẽ không lấy lại được</p>
+                    <div class="m-t-20 text-right">
+                        <button class="btn btn-default" data-dismiss="modal">Cancel</button>
+                        <button class="btn btn-primary" data-dismiss="modal">Xóa</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal modal-right  fade " id="side-modal-r">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="side-modal-wrapper">
+                    <div class="vertical-align">
+                        <div class="table-cell">
+                            <div class="modal-body">
+                                <div class="p-h-15">
+                                    <h4> Phản hồi </h4>
+                                    <p class="m-b-15 font-size-13"> Tên và email người nhận</p>
+                                    <form>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="Tên người nhận">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="email" class="form-control" placeholder="Email Adress">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="Nội dung">
+                                        </div>
+
+                                        <button class="btn btn-success">Gửi thư</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- page-wrapper -->
+    <div class="modal fade modal-fs" id="modal-fs">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="container text-center">
+                        <div class="row full-height align-items-center">
+                            <div class="col-md-5 m-h-auto">
+                                <div class="p-h-30 p-b-50">
+                                    <div class="text-center font-size-70">
+                                        <i class="mdi mdi-checkbox-marked-circle-outline icon-gradient-success"></i>
+                                    </div>
+                                    <h1 class="text-thin m-v-15">Bạn đã phê duyệt báo cáo tuần thứ 1</h1>
+                                    <p class="m-b-25 lead">Võ Thị Hà Vy - Hậu cần 1</p>
+                                    <div class="text-center">
+                                        <button class="btn btn-default btn-lg">Xác nhận</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="modal-close" href="#" data-dismiss="modal">
+                        <i class="ti-close"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal-sm">
+        <div class="modal-dialog modal-sm" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <h4 class="m-b-15">Bạn có chắc chắn xóa không</h4>
+                    <p>Xóa cái này sẽ không lấy lại được</p>
+                    <div class="m-t-20 text-right">
+                        <button class="btn btn-default" data-dismiss="modal">Cancel</button>
+                        <button class="btn btn-primary" data-dismiss="modal">Xóa</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal modal-right  fade " id="side-modal-r">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="side-modal-wrapper">
+                    <div class="vertical-align">
+                        <div class="table-cell">
+                            <div class="modal-body">
+                                <div class="p-h-15">
+                                    <h4>Phản hồi </h4>
+                                    <p class="m-b-15 font-size-13">Tên và email người nhận</p>
+                                    <form>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="Tên người nhận">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="email" class="form-control" placeholder="Email Adress">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="Nội dung">
+                                        </div>
+
+                                        <button class="btn btn-success">Gửi thư</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- using online scripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
@@ -444,8 +594,13 @@
     <script src="assets/js/app.min.js"></script>
 
     <!-- page js -->
+    <script src="assets/js/apps/chat.js"></script>
     <script src="assets/js/main.js"></script>
     <script src="js/main.js"></script>
+    <script src="assets/vendor/datatables/media/js/jquery.dataTables.js"></script>
+    <script src="assets/vendor/datatables/media/js/dataTables.bootstrap4.min.js"></script>
+    <script src="assets/js/tables/data-table.js"></script>
+
 </body>
 
 </html>
